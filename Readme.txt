@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+Site com o perfil do Dev Vinicius Resende Pires
+Author: Vinicius Resende Pires
 
-Template Name: iPortfolio
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
