@@ -154,7 +154,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #0d1b2a;
   position: fixed;
   top: 0;
   left: 0;
@@ -587,7 +587,7 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: 48px;
   font-weight: 700;
   width: 55%;
   background: rgba(0, 0, 0, 0.5);
