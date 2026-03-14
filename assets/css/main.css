@@ -28,37 +28,37 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #149ddd; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+:root {
+  --background-color: #f8fafc; /* Background color for the entire website, including individual sections */
+  --default-color: #1e293b; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #0f172a; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #6366f1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
+  --nav-color: #94a3b8;  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #a8a9b4; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-mobile-background-color: #100d1f; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #100d1f; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #94a3b8; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4fafd;
+  --background-color: #eef2ff;
   --surface-color: #ffffff;
 }
 
 .dark-background {
-  --background-color: #0f0f0f;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #151f2b;
+  --background-color: #0f0b1f;
+  --default-color: #e2e8f0;
+  --heading-color: #f1f5f9;
+  --surface-color: #1a1533;
   --contrast-color: #ffffff;
 }
 
@@ -154,7 +154,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: #0d1b2a;
+  background-color: #100d1f;
   position: fixed;
   top: 0;
   left: 0;
@@ -1285,4 +1285,36 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Custom Enhancements
+--------------------------------------------------------------*/
+
+/* WhatsApp social link color */
+.header .social-links a.whatsapp:hover {
+  background: #25d366 !important;
+}
+
+/* Scroll top com cor nova */
+.scroll-top {
+  background: linear-gradient(135deg, #6366f1, #818cf8);
+}
+
+/* Seção title underline com gradiente */
+.section-title h2:after {
+  background: linear-gradient(90deg, #6366f1, #818cf8);
+  border-radius: 3px;
+}
+
+/* Service items full-height in grid */
+.services .row.gy-4 > [class*="col-"] {
+  display: flex;
+}
+
+/* Better mobile nav toggle position on mobile */
+@media (max-width: 1199px) {
+  .hero h2 {
+    font-size: 34px !important;
+  }
 }
